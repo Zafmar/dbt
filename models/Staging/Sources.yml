@@ -1,0 +1,24 @@
+
+version: 2
+
+sources:
+  - name: pulsecart
+    description: Raw operational data from PulseCart.
+    database: PULSECART
+    schema: RAW
+
+    tables:
+      - name: customers
+        description: Raw customer profiles and updates.
+
+      - name: products
+        description: Raw product catalog.
+
+      - name: orders
+        description: Raw e-commerce order headers.
+
+      - name: order_items
+        description: Raw order line items.
+
+      - name: payments
+        description: Raw payment transactions and refunds.
